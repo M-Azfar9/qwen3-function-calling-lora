@@ -4,7 +4,7 @@ An LLM fine-tuning project focused on structured function calling, tool selectio
 
 ## Project Overview
 
-Fine-tuned `Qwen/Qwen3-0.6B` using FP16 LoRA and supervised fine-tuning (SFT) on the Glaive Function Calling v2 dataset.
+Fine-tuned `Qwen/Qwen3-1.7B` using FP16 LoRA and supervised fine-tuning (SFT) on the Glaive Function Calling v2 dataset.
 
 The goal is to improve the model's ability to select the appropriate tool and generate structured JSON arguments from user requests.
 
@@ -71,7 +71,7 @@ This output contains the tool name and arguments in a machine-readable format.
 
 ## Base Model and Dataset
 
-- Base model: [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
+- Base model: [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Dataset: [Glaive Function Calling v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2)
 
 ## Loading the Adapter
@@ -83,7 +83,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
-base_model_name = "Qwen/Qwen3-0.6B"
+base_model_name = "Qwen/Qwen3-1.7B"
 adapter_path = "./qwen3-function-calling-lora-final"
 
 tokenizer = AutoTokenizer.from_pretrained(adapter_path)

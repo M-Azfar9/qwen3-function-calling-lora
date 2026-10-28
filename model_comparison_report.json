@@ -1,0 +1,38 @@
+{
+  "evaluation_dataset": "Glaive Function Calling v2",
+  "evaluation_examples": 1000,
+  "baseline_metrics": {
+    "model": "Qwen3-1.7B Base",
+    "num_examples": 1000,
+    "valid_json_rate": 18.5,
+    "tool_name_accuracy": 15.7,
+    "exact_argument_accuracy": 14.7
+  },
+  "finetuned_metrics": {
+    "model": "Qwen3-1.7B + LoRA",
+    "num_examples": 1000,
+    "valid_json_rate": 100.0,
+    "tool_name_accuracy": 100.0,
+    "exact_argument_accuracy": 96.39999999999999
+  },
+  "comparison": [
+    {
+      "Metric": "Valid JSON Rate",
+      "Base Model (%)": 18.5,
+      "Fine-tuned Model (%)": 100.0,
+      "Improvement (percentage points)": 81.5
+    },
+    {
+      "Metric": "Tool Name Accuracy",
+      "Base Model (%)": 15.7,
+      "Fine-tuned Model (%)": 100.0,
+      "Improvement (percentage points)": 84.3
+    },
+    {
+      "Metric": "Exact Argument Accuracy",
+      "Base Model (%)": 14.7,
+      "Fine-tuned Model (%)": 96.4,
+      "Improvement (percentage points)": 81.7
+    }
+  ]
+}

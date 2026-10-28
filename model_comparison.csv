@@ -1,0 +1,4 @@
+Metric,Base Model (%),Fine-tuned Model (%),Improvement (percentage points)
+Valid JSON Rate,18.5,100.0,81.5
+Tool Name Accuracy,15.7,100.0,84.3
+Exact Argument Accuracy,14.7,96.39999999999999,81.69999999999999
